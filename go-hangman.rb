@@ -1,3 +1,4 @@
+require 'Library/Homebrew/formula.rb'
 # Classname should match the name of the installed package.
 class Gohangman < Formula
     desc "Hangman is a game created using Go Lang."
@@ -8,6 +9,8 @@ class Gohangman < Formula
     url "https://github.com/kumarsparkz/go-hangman/archive/{version}.tar.gz"
     sha256 "f5ac2ba0dfc711d5b6c9121c6c51f11cc692c94d"
     
+    bottle :unneeded
+
     depends_on "go" => :build
     
   def install
@@ -23,3 +26,4 @@ class Gohangman < Formula
       system "go", "build", "-o", bin/"go-hangman", "."
     end
   end
+end

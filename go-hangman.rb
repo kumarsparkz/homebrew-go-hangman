@@ -2,7 +2,7 @@
 class gohangman < Formula
     desc "Hangman is a game created using Go Lang."
     homepage "https://github.com/kumarsparkz/go-hangman"
-    version "0.1.1"
+    version "0.1.2"
 
     # Source code archive. Each tagged release will have one
     url "https://github.com/kumarsparkz/go-hangman/archive/{version}.tar.gz"

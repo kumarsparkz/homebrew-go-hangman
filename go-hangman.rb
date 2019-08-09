@@ -1,12 +1,12 @@
 # Classname should match the name of the installed package.
-class go-hangman < Formula
+class gohangman < Formula
     desc "Hangman is a game created using Go Lang."
     homepage "https://github.com/kumarsparkz/go-hangman"
-    version "0.1.0"
-    
+    version "0.1.1"
+
     # Source code archive. Each tagged release will have one
     url "https://github.com/kumarsparkz/go-hangman/archive/{version}.tar.gz"
-    sha256 "3d08578bafcbdc1eb582b117a9830ca68b686f28"
+    sha256 "9cca496b9b6caee80351b183c90ab98c0b5cb71e"
     
     depends_on "go" => :build
     
@@ -23,4 +23,3 @@ class go-hangman < Formula
       system "go", "build", "-o", bin/"go-hangman", "."
     end
   end
-  
